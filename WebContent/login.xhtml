@@ -1,0 +1,22 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="template/template.xhtml">
+
+    <ui:define name="metadata">
+    </ui:define>
+    <ui:define name="contents">
+       
+       <h:form id="loginForm">
+       <p:panelGrid columns="2" id='panelLogin'>
+       <p:outputLabel value="Enter User ID: "></p:outputLabel>
+       <p:inputText id = 'txtuserid'> </p:inputText> 
+       <p:outputLabel value="Enter Password: "></p:outputLabel>
+       <p:password id = 'txtPasswd'> </p:password> 
+       <p:commandButton  value = 'login' > </p:commandButton>       
+       </p:panelGrid>
+       </h:form>
+    </ui:define>
+</ui:composition>
